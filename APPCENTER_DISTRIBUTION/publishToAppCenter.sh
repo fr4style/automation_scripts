@@ -73,8 +73,6 @@ IFS='/' read -r -a url_items <<< "$PROJECT_URL"
 APP_NAME=${url_items[6]};
 OWNER_NAME=${url_items[4]};
 
-echo "PU $PROJECT_URL, FP $FILE_PATH, AT $API_TOKEN, AN $APP_NAME OW $OWNER_NAME";
-
 function jsonval {
 	json="$1"
 	prop="$2"
